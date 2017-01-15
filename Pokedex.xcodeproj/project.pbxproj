@@ -15,6 +15,9 @@
 		CE4B19181E2C0C820031FF5B /* PokedexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B19171E2C0C820031FF5B /* PokedexTests.swift */; };
 		CE4B19231E2C0C820031FF5B /* PokedexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B19221E2C0C820031FF5B /* PokedexUITests.swift */; };
 		CE4B19311E2C0E9B0031FF5B /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = CE4B19301E2C0E9B0031FF5B /* pokemon.csv */; };
+		CE4B19331E2C0F7A0031FF5B /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B19321E2C0F7A0031FF5B /* Pokemon.swift */; };
+		CE4B19371E2C132F0031FF5B /* pokeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B19361E2C132F0031FF5B /* pokeCell.swift */; };
+		CE4B19391E2C1BFC0031FF5B /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4B19381E2C1BFC0031FF5B /* csv.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		CE4B19221E2C0C820031FF5B /* PokedexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexUITests.swift; sourceTree = "<group>"; };
 		CE4B19241E2C0C820031FF5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4B19301E2C0E9B0031FF5B /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		CE4B19321E2C0F7A0031FF5B /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		CE4B19361E2C132F0031FF5B /* pokeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pokeCell.swift; sourceTree = "<group>"; };
+		CE4B19381E2C1BFC0031FF5B /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,10 @@
 		CE4B19011E2C0C820031FF5B /* Pokedex */ = {
 			isa = PBXGroup;
 			children = (
+				CE4B19351E2C131B0031FF5B /* Views */,
+				CE4B19341E2C0F7D0031FF5B /* Model */,
 				CE4B19021E2C0C820031FF5B /* AppDelegate.swift */,
+				CE4B19381E2C1BFC0031FF5B /* csv.swift */,
 				CE4B19041E2C0C820031FF5B /* ViewController.swift */,
 				CE4B19061E2C0C820031FF5B /* Main.storyboard */,
 				CE4B19301E2C0E9B0031FF5B /* pokemon.csv */,
@@ -126,6 +135,22 @@
 				CE4B19241E2C0C820031FF5B /* Info.plist */,
 			);
 			path = PokedexUITests;
+			sourceTree = "<group>";
+		};
+		CE4B19341E2C0F7D0031FF5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B19321E2C0F7A0031FF5B /* Pokemon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CE4B19351E2C131B0031FF5B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE4B19361E2C132F0031FF5B /* pokeCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,15 +221,18 @@
 				TargetAttributes = {
 					CE4B18FE1E2C0C820031FF5B = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					CE4B19121E2C0C820031FF5B = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CE4B18FE1E2C0C820031FF5B;
 					};
 					CE4B191D1E2C0C820031FF5B = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = CE4B18FE1E2C0C820031FF5B;
 					};
@@ -263,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4B19371E2C132F0031FF5B /* pokeCell.swift in Sources */,
 				CE4B19051E2C0C820031FF5B /* ViewController.swift in Sources */,
 				CE4B19031E2C0C820031FF5B /* AppDelegate.swift in Sources */,
+				CE4B19331E2C0F7A0031FF5B /* Pokemon.swift in Sources */,
+				CE4B19391E2C1BFC0031FF5B /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
